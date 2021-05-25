@@ -1,15 +1,13 @@
-
-
 def isPalindrome(s):
-    return s == s[::-1]
+    s = s.casefold()
+    reversedS = reversed(s)
 
+    if (list(s) == list(reversedS)):
+        return True
+    else:
+        return False
 
-s = input ('wpisz wyraz i sprawdż czy  jest palidromem:')
-s = s.lower()
-
-ans = isPalindrome(s)
-
-if ans:
-    print("Tak")
-else:
-    print("Nie")
+print(isPalindrome("Mama"))
+print(isPalindrome("Kajak"))
+print(isPalindrome("kajak"))
+print(isPalindrome("MaDAM"))
