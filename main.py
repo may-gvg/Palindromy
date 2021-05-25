@@ -5,6 +5,8 @@ def isPalindrome(s):
 
 
 s = input ('wpisz wyraz i sprawdż czy  jest palidromem:')
+s = s.lower()
+
 ans = isPalindrome(s)
 
 if ans:
