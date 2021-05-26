@@ -2,10 +2,7 @@ def isPalindrome(s):
     s = s.casefold()
     reversedS = reversed(s)
 
-    if (list(s) == list(reversedS)):
-        return True
-    else:
-        return False
+    return list(s) == list(reversedS)
 
 print(isPalindrome("Mama"))
 print(isPalindrome("Kajak"))
